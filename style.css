@@ -79,7 +79,7 @@ html, body{
     display: block;
     position: relative;
     background-attachment: fixed;
-    background-image: url("aimCode.github.io/_bg.jpeg");
+    background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true");
     background-size: cover;
     background-position: center;    
 }
