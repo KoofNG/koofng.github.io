@@ -79,7 +79,7 @@ html, body{
     display: block;
     position: relative;
     background-attachment: fixed;
-    background-image: url("https://aimcode.github.io/_bg.jpeg");
+    background-image: url("https://aimCode.github.io/_bg.jpeg");
     background-size: cover;
     background-position: center;    
 }
@@ -139,41 +139,4 @@ html, body{
 }
 #upDown:hover{
     width: 70px;
-}
-
-#about_me{
-    width: 100%;
-    height: 500px;
-    display: block;
-    position: relative;
-    padding: 50px 100px;
-}
-#about_me div{
-    display: block;
-    position: relative;
-    float: left;
-}
-#about_me div:nth-child(1){
-    background-color: rgba(0, 0, 0, 0.6);
-    width: calc(100% - 60%);
-    height: 100%;
-}
-#about_me div:nth-child(2){
-    width: 60%;
-    height: 100%;
-    padding: 50px 50px 50px 40px;
-}
-#about_me div:nth-child(2) p{
-    font-size: 18px;
-    font-kerning: normal;
-    color: #121212;
-}
-#about_me div:nth-child(2) p:nth-child(1){
-    font-weight: 700;
-    font-family: "Lato";
-    padding: 0 0 10px 0;
-}
-#about_me div:nth-child(2) p:nth-child(n+2){
-    font-family: "Roboto";
-    padding: 12.5px 0 0 0;
 }
