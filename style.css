@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+html, body{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#app{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 2.5px;
+    background-color: #ffffff;
+    opacity: 1;
+    z-index: 3;
+    padding: 0 100px;
+}
+    #nav ul{
+        list-style: none;
+        display: block;
+        position: relative;
+        height: 60px;
+        width: auto;
+        padding: 10px 0; 
+        text-align: center;
+    }
+    #nav ul li{
+        list-style: none;
+        display: inline-block;
+        height: 40px;
+        padding: 5px 10px;
+        margin: 0 2.5px;
+    }
+    #nav ul li a{
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-transform: lowercase;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Lato";
+        font-kerning: normal;
+        color: #121212;
+        opacity: 0.6;
+        font-size: 17px;
+        font-weight: 500;
+        padding: 4px 0;
+        border-bottom: 1.2px solid rgba(0, 0, 0, 0.6);
+        transition: all 0.5s ease-in-out;
+    }
+    #nav ul li a:hover{
+        opacity: 1;
+        border-bottom: 1.2px solid rgba(0, 0, 0, 1);
+    }
+#bg_{
+    width: 100%;
+    height: 100vh;
+    max-height: 760px;
+    display: block;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url("_bg.jpeg");
+    background-size: cover;
+    background-position: center;    
+}
+#bg_::after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+}
+.bg_content{
+    position: relative;
+    display: block;
+    z-index: 2;
+    top: 40%;
+    padding: 0 100px;
+    transform: translateY(-40%);
+    text-align: center;
+    color: #ffffff;    
+    font-family: "Lato";
+    text-transform: capitalize;
+    font-kerning: normal;
+}        
+    .bg_content h6{
+        font-weight: lighter;
+        font-size: 24px;
+    }
+    .bg_content h3{
+        padding: 15px 0;
+        font-weight: normal;
+        font-size: 45px
+    }
+    .bg_content p{
+        font-size: 24px;
+    }
+#upDown{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    right: 100px;
+    position: fixed;
+    bottom: 50px;
+    background-color: black;
+    opacity: 0.7;
+    border: 1.5px solid #ffffff;
+    z-index: 1000;
+    padding: 10px;
+    transition: width 0.5s ease-in-out;
+    cursor: pointer;
+}
+#upDown:hover{
+    width: 70px;
+}
+
+#about_me{
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+    padding: 50px 100px;
+}
+#about_me div{
+    display: block;
+    position: relative;
+    float: left;
+}
+#about_me div:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.6);
+    width: calc(100% - 60%);
+    height: 100%;
+}
+#about_me div:nth-child(2){
+    width: 60%;
+    height: 100%;
+    padding: 50px 50px 50px 40px;
+}
+#about_me div:nth-child(2) p{
+    font-size: 18px;
+    font-kerning: normal;
+    color: #121212;
+}
+#about_me div:nth-child(2) p:nth-child(1){
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 0 0 10px 0;
+}
+#about_me div:nth-child(2) p:nth-child(n+2){
+    font-family: "Roboto";
+    padding: 12.5px 0 0 0;
+}
