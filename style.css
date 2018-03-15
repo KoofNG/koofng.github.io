@@ -26,7 +26,7 @@ html, body{
     padding: 0;
     top: 0;
 }
-@media screen and (min-width:767px) {
+@media screen and (min-width:768px) {
     /* NAVIGATION */
     #nav{
         height: 51px;
@@ -347,6 +347,328 @@ html, body{
     }
     div.links>ul>li>p{
         font-size: 16px;
+        text-transform: none;
+        text-decoration: none;
+        padding: 0;
+    }
+    div.links>ul>li>a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* NAVIGATION */
+    #nav{
+        height: 41px;
+        width: 100%;
+        display: block;
+        position: fixed;
+        background-color: #ffffff;
+        opacity: 0.7;
+        padding: 0 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+    }
+    #nav ul{
+        height: 100%;
+        width: auto;
+        padding: 5px 0; 
+        margin: 0;
+        list-style: none;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    #nav ul li{
+        list-style: none;
+        display: none;
+        height: 30px;
+        padding: 0;
+        margin: 0 2.5px;
+    }
+    #nav ul li a{
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-transform: lowercase;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Lato";
+        font-kerning: normal;
+        color: #121212;
+        opacity: 0.6;
+        font-size: 17px;
+        font-weight: 500;
+        padding: 4px 0;
+        transition: all 0.25s ease-in-out;
+    }
+    #nav ul li a:hover{
+        opacity: 1;
+    }
+
+    /* Background */
+    #bg_{
+        width: 100%;
+        height: 100vh;
+        max-height: 750px;
+        display: block;
+        position: relative;
+        background-attachment: fixed;
+        background-image: url("_bg.jpeg");
+        /* background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true"); */
+        background-size: cover;
+        background-position: center;    
+    }
+    #bg_::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0.7;
+    }
+    /* Background Content */
+    .bg_content{
+        position: relative;
+        display: block;
+        z-index: 2;
+        padding: 0 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #ffffff;    
+        font-family: "Lato";
+        text-transform: capitalize;
+        font-kerning: normal;
+    }        
+    .bg_content h6{
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    .bg_content h3{
+        padding: 10px 0;
+        margin: 0;
+        font-weight: normal;
+        font-size: 35px
+    }
+    .bg_content p{
+        font-size: 20px;
+    }
+
+    /* About Me */
+    #about_me{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        padding: 25px 20px;
+    }
+    #about_me div{
+        display: block;
+        position: relative;
+    }
+    #about_me div:nth-child(1){
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: block;
+        position: relative;
+        float: left;
+    }
+    #about_me div:nth-child(1) p{
+        font-size: 18px;
+        font-kerning: normal;
+        color: #121212;
+        margin: 0;
+    }
+    #about_me div:nth-child(1) p:nth-child(1){
+        font-weight: 500;
+        font-family: "Lato";
+        padding: 0 0 7.5px 0;
+        margin: 0;
+    }
+    #about_me div:nth-child(1) p:nth-child(n+2){
+        font-family: "Roboto";
+        padding: 7.5px 0 0 0;
+    }
+    #about_me div:nth-child(2){
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    /* Skills */
+    #skills{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        padding: 25px 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    #skills>p{
+        font-family: "Lato";
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+    }
+    #skills .tech{
+        width: calc(100%/2);
+        height: 120px;
+        display: block;
+        float: left;
+        position: relative;
+        margin: 0 0 12.5px 0;
+        padding: 0 20px;;
+    }
+    #skills .tech .image{
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        display: block;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #skills .tech .image::after{
+        content: "\f121";
+        color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        font-size: 35px;
+        top: 25%;
+        transform: translateY(-25%);
+        display: block;
+        position: relative;
+    }
+    #skills .tech p{
+        height: 30px;
+        width: 150px;
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Roboto";
+        background-color: #ffffff;
+    } 
+
+    /* My Works */
+    #my_works{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        padding: 25px 20px;
+        background-color: rgba(255, 255, 255, 0.733);
+    }
+    #my_works>p{
+        color: #112211;    
+        font-family: "Lato";
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    div.firstWk{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        display: block;
+        position: relative;
+        background-color: transparent;
+    }
+    div.firstWk div.imageWk{
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        display: block;
+        position: relative;
+        background-color: transparent;
+        background-image: url("spleet.PNG");/* 
+        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); */
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    div.firstWk div.about{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        padding: 10px 0;
+    }
+    div.firstWk>div.about>p:nth-child(1) a{
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        padding: 0px 0 7.5px 0;
+        text-decoration: none;
+        color: #121212;
+        display: block;
+        position: relative;
+    }
+    div.firstWk>div.about>p:nth-child(2){
+        font-size: 16px;
+        font-family: "Roboto";
+        color: #121212;
+        line-height: 1.5;
+    }
+    div#contact_me{
+        width: 100%;
+        height: 100%;
+        padding: 15px 20px;
+        position: relative;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.6)
+    }
+    div#contact_me>p{
+        color: #ffffff;    
+        font-family: "Lato";
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    div.links{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        padding: 10px 0 0 0;
+    }
+    div.links ul{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        display: inline-block;
+        position: relative;
+    }
+    div.links ul li{
+        list-style: none;
+        display: block;
+        position: relative;
+        padding: 5px 0px;
+        font-family: "Lato";
+        width: 100%;
+        height: auto;
+    }
+    div.links>ul>li>p{
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
         text-transform: none;
         text-decoration: none;
         padding: 0;
