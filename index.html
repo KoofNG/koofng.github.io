@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/c262471df6.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Israel Michael AKpan</title>
+    <title>Israel Michael Akpan</title>
 </head>
 <body>
     <div id="app">
@@ -42,22 +45,32 @@
         <div id="skills">
             <p>Worked with the following web technologies</p>
             <div class="tech">
-                <div class="image"><p>HTML</p></div>
+                <div class="image html"></div>
+                    <p>HTML</p>
             </div>
             <div class="tech">
-                <div class="image"><p>CSS</p></div>                
+                <div class="image css"></div>
+                    <p>CSS</p>           
             </div>
             <div class="tech">
-                <div class="image"><p>Javascript</p></div>                
+                <div class="image js"></div>
+                    <p>Javascript</p>                
             </div>
             <div class="tech">
-                <div class="image"><p>Jquery</p></div>                
+                <div class="image jquery"></div>
+                    <p>Jquery</p>              
             </div>
             <div class="tech">
-                <div class="image"><p>PHP</p></div>                
+                <div class="image php"></div>
+                    <p>PHP</p>           
             </div>
             <div class="tech">
-                <div class="image"><p>Bootstrap</p></div>                
+                <div class="image bs"></div>
+                    <p>Bootstrap</p>                
+            </div>
+            <div class="tech">
+                <div class="image git"></div>
+                    <p>Git</p>                
             </div>
         </div>
 
@@ -88,7 +101,7 @@
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
+            }, 1000);
         });
     </script>
 </body>

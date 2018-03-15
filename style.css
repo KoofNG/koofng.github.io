@@ -194,8 +194,8 @@ html, body{
     color: #ffffff;
 }
 #skills .tech{
-    width: calc(100%/4);
-    height: 250px;
+    width: calc(100%/3);
+    height: 200px;
     display: block;
     float: left;
     position: relative;
@@ -203,28 +203,65 @@ html, body{
     padding: 30px 40px;
 }
 #skills .tech .image{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     display: block;
     position: relative;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 0 auto;
-    border-radius: 75px;
+    border-radius: 60px;
+    text-align: center;
 }
-#skills .tech .image>p{
+#skills .tech .image.css::after {
+    content: "\f13c";
+    color: #4f87fb;
+    font-size: 26px;
     display: block;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  #skills .tech .image.html::after {
+    content: "\f13b";
+    color: #4f87fb;
+    font-size: 26px;
+    display: block;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+#skills .tech .image.git::after {
+    content: "\f1d3";
+    color: #4f87fb;
+    font-size: 26px;
+    display: block;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+#skills .tech p{
+    height: 40px;
+    width: 180px;
+    padding: 10px 30px;
+
+
+    display: block;
+    position: relative;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
     text-align: center;
     font-size: 18px;
     font-family: "Roboto";
-    padding: 20px 10px;
+    background-color: #ffffff;
 }
+
+
 #my_works{
     width: 100%;
-    height: 400px;
+    height: auto;
     display: inline-block;
     position: relative;
     padding: 50px 100px;
@@ -271,7 +308,7 @@ div.firstWk>div.about>p:nth-child(2){
 }
 div.firstWk div.imageWk{
     width: 50%;
-    height: 250px;
+    height: 350px;
     border-radius: 5px;
     display: block;
     position: relative;
