@@ -24,54 +24,57 @@ html, body{
     padding: 0;
     top: 0;
 }
+/* NAVIGATION */
 #nav{
     height: 60px;
     width: 100%;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 2.5px;
     background-color: #ffffff;
     opacity: 1;
     z-index: 3;
     padding: 0 100px;
 }
-    #nav ul{
-        list-style: none;
-        display: block;
-        position: relative;
-        height: 60px;
-        width: auto;
-        padding: 10px 0; 
-        text-align: center;
-    }
-    #nav ul li{
-        list-style: none;
-        display: inline-block;
-        height: 40px;
-        padding: 5px 10px;
-        margin: 0 2.5px;
-    }
-    #nav ul li a{
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-transform: lowercase;
-        text-decoration: none;
-        text-align: center;
-        font-family: "Lato";
-        font-kerning: normal;
-        color: #121212;
-        opacity: 0.6;
-        font-size: 17px;
-        font-weight: 500;
-        padding: 4px 0;
-        border-bottom: 1.2px solid rgba(0, 0, 0, 0.6);
-        transition: all 0.5s ease-in-out;
-    }
-    #nav ul li a:hover{
-        opacity: 1;
-        border-bottom: 1.2px solid rgba(0, 0, 0, 1);
-    }
+#nav ul{
+    list-style: none;
+    display: block;
+    position: relative;
+    height: 60px;
+    width: auto;
+    padding: 10px 0; 
+    text-align: center;
+}
+#nav ul li{
+    list-style: none;
+    display: inline-block;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 0 2.5px;
+}
+#nav ul li a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-transform: lowercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Lato";
+    font-kerning: normal;
+    color: #121212;
+    opacity: 0.6;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 4px 0;
+    border-bottom: 1.2px solid rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in-out;
+}
+#nav ul li a:hover{
+    opacity: 1;
+    border-bottom: 1.2px solid rgba(0, 0, 0, 1);
+}
+
+/* Background Image */
 #bg_{
     width: 100%;
     height: 100vh;
@@ -96,6 +99,8 @@ html, body{
     background: #000;
     opacity: 0.7;
 }
+
+/* Background Content */
 .bg_content{
     position: relative;
     display: block;
@@ -109,18 +114,20 @@ html, body{
     text-transform: capitalize;
     font-kerning: normal;
 }        
-    .bg_content h6{
-        font-weight: lighter;
-        font-size: 24px;
-    }
-    .bg_content h3{
-        padding: 15px 0;
-        font-weight: normal;
-        font-size: 45px
-    }
-    .bg_content p{
-        font-size: 24px;
-    }
+.bg_content h6{
+    font-weight: lighter;
+    font-size: 24px;
+}
+.bg_content h3{
+    padding: 15px 0;
+    font-weight: normal;
+    font-size: 45px
+}
+.bg_content p{
+    font-size: 24px;
+}
+
+/* Stationary Drop Down Button */
 #upDown{
     width: 50px;
     height: 50px;
@@ -141,6 +148,7 @@ html, body{
     width: 70px;
 }
 
+/* About Me */
 #about_me{
     width: 100%;
     height: 500px;
@@ -155,8 +163,14 @@ html, body{
 }
 #about_me div:nth-child(1){
     background-color: rgba(0, 0, 0, 0.6);
-    width: calc(100% - 60%);
+    width: calc(100% - 70%);
     height: 100%;
+    background-image: url("me.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
 }
 #about_me div:nth-child(2){
     width: 60%;
@@ -178,6 +192,7 @@ html, body{
     padding: 12.5px 0 0 0;
 }
 
+/* Skills */
 #skills{
     width: 100%;
     height: auto;
@@ -221,11 +236,31 @@ html, body{
     position: relative;
     top: 40%;
     transform: translateY(-40%);
-  }
-  #skills .tech .image.html::after {
+}
+#skills .tech .image.html::after {
     content: "\f13b";
     color: #4f87fb;
     font-size: 26px;
+    display: block;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+#skills .tech .image.js {
+    background-image: url("javascript.png");
+    background-position: center;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+#skills .tech .image.jquery {
+    background-image: url("jquery.png");
+    background-position: center;
+    background-size: 70% 40%;
+    background-repeat: no-repeat;
     display: block;
     position: relative;
     top: 40%;
@@ -256,7 +291,7 @@ html, body{
     background-color: #ffffff;
 }
 
-
+/* My Works */
 #my_works{
     width: 100%;
     height: auto;
