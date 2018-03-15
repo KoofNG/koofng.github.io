@@ -1,3 +1,4 @@
+/* Importation of font files */
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 html, body{
     padding: 0;
@@ -15,6 +16,7 @@ html, body{
     -ms-user-select: none;
     -webkit-user-select: none;
 }
+/* Main portfolio wrapper */
 #app{
     height: 100%;
     width: 100%;
@@ -24,363 +26,323 @@ html, body{
     padding: 0;
     top: 0;
 }
-/* NAVIGATION */
-#nav{
-    height: 60px;
-    width: 100%;
-    display: block;
-    position: fixed;
-    top: 2.5px;
-    background-color: #ffffff;
-    opacity: 1;
-    z-index: 3;
-    padding: 0 100px;
-}
-#nav ul{
-    list-style: none;
-    display: block;
-    position: relative;
-    height: 60px;
-    width: auto;
-    padding: 10px 0; 
-    text-align: center;
-}
-#nav ul li{
-    list-style: none;
-    display: inline-block;
-    height: 40px;
-    padding: 5px 10px;
-    margin: 0 2.5px;
-}
-#nav ul li a{
-    height: 100%;
-    width: 100%;
-    display: block;
-    text-transform: lowercase;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Lato";
-    font-kerning: normal;
-    color: #121212;
-    opacity: 0.6;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 4px 0;
-    border-bottom: 1.2px solid rgba(0, 0, 0, 0.6);
-    transition: all 0.5s ease-in-out;
-}
-#nav ul li a:hover{
-    opacity: 1;
-    border-bottom: 1.2px solid rgba(0, 0, 0, 1);
-}
+@media screen and (min-width:767px) {
+    /* NAVIGATION */
+    #nav{
+        height: 51px;
+        width: 100%;
+        display: block;
+        position: fixed;
+        background-color: #ffffff;
+        opacity: 0.7;
+        padding: 0 100px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+    }
+    #nav ul{
+        height: 100%;
+        width: auto;
+        padding: 10px 0; 
+        margin: 0;
+        list-style: none;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    #nav ul li{
+        list-style: none;
+        display: inline-block;
+        height: 30px;
+        padding: 0 10px;
+        margin: 0 2.5px;
+    }
+    #nav ul li a{
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-transform: lowercase;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Lato";
+        font-kerning: normal;
+        color: #121212;
+        opacity: 0.6;
+        font-size: 17px;
+        font-weight: 500;
+        padding: 4px 0;
+        transition: all 0.25s ease-in-out;
+    }
+    #nav ul li a:hover{
+        opacity: 1;
+    }
+    
+    /* Background */
+    /* Background Image */
+    #bg_{
+        width: 100%;
+        height: 100vh;
+        max-height: 750px;
+        display: block;
+        position: relative;
+        background-attachment: fixed;
+        background-image: url("_bg.jpeg");
+        /* background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true"); */
+        background-size: cover;
+        background-position: center;    
+    }
+    #bg_::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0.7;
+    }
+    /* Background Content */
+    .bg_content{
+        position: relative;
+        display: block;
+        z-index: 2;
+        padding: 0 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #ffffff;    
+        font-family: "Lato";
+        text-transform: capitalize;
+        font-kerning: normal;
+    }        
+    .bg_content h6{
+        font-weight: lighter;
+        font-size: 24px;
+    }
+    .bg_content h3{
+        padding: 10px 0;
+        margin: 0;
+        font-weight: normal;
+        font-size: 40px
+    }
+    .bg_content p{
+        font-size: 24px;
+    }
 
-/* Background Image */
-#bg_{
-    width: 100%;
-    height: 100vh;
-    max-height: 760px;
-    display: block;
-    position: relative;
-    background-attachment: fixed;
-    background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true");
-    background-size: cover;
-    background-position: center;    
-}
-#bg_::after{
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: 0.7;
-}
+    /* About Me */
+    #about_me{
+        width: 100%;
+        height: 500px;
+        display: block;
+        position: relative;
+        padding: 50px 100px;
+    }
+    #about_me div{
+        display: block;
+        position: relative;
+        float: left;
+    }
+    #about_me div:nth-child(1){
+        width: 60%;
+        height: 100%;
+        padding: 50px;
+        display: block;
+        position: relative;
+        float: left;
+    }
+    #about_me div:nth-child(1) p{
+        font-size: 18px;
+        font-kerning: normal;
+        color: #121212;
+    }
+    #about_me div:nth-child(1) p:nth-child(1){
+        font-weight: 500;
+        font-family: "Lato";
+        padding: 0 0 10px 0;
+    }
+    #about_me div:nth-child(1) p:nth-child(n+2){
+        font-family: "Roboto";
+        padding: 12.5px 0 0 0;
+    }
+    #about_me div:nth-child(2){
+        width: calc(100% - 60%);
+        height: 100%;
+        padding: 0;
+        background-image: url("me.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+    }
 
-/* Background Content */
-.bg_content{
-    position: relative;
-    display: block;
-    z-index: 2;
-    top: 40%;
-    padding: 0 100px;
-    transform: translateY(-40%);
-    text-align: center;
-    color: #ffffff;    
-    font-family: "Lato";
-    text-transform: capitalize;
-    font-kerning: normal;
-}        
-.bg_content h6{
-    font-weight: lighter;
-    font-size: 24px;
-}
-.bg_content h3{
-    padding: 15px 0;
-    font-weight: normal;
-    font-size: 45px
-}
-.bg_content p{
-    font-size: 24px;
-}
+    /* Skills */
+    #skills{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        padding: 50px 100px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    #skills>p{
+        font-family: "Lato";
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+    }
+    #skills .tech{
+        width: calc(100%/4);
+        height: 150px;
+        display: block;
+        float: left;
+        position: relative;
+        margin: 0 0 15px 0;
+        padding: 30px 40px;
+    }
+    #skills .tech .image{
+        width: 130px;
+        height: 130px;
+        border-radius: 65px;
+        display: block;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #skills .tech p{
+        height: 40px;
+        width: 180px;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Roboto";
+        background-color: #ffffff;
+    } 
 
-/* Stationary Drop Down Button */
-#upDown{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    text-align: center;
-    right: 100px;
-    position: fixed;
-    bottom: 50px;
-    background-color: black;
-    opacity: 0.7;
-    border: 1.5px solid #ffffff;
-    z-index: 1000;
-    padding: 10px;
-    transition: width 0.5s ease-in-out;
-    cursor: pointer;
-}
-#upDown:hover{
-    width: 70px;
-}
+    /* My Works */
+    #my_works{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        padding: 50px 100px;
+        background-color: rgba(255, 255, 255, 0.733);
+    }
+    #my_works>p{
+        color: #112211;    
+        font-family: "Lato";
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    div.firstWk{
+        width: 100%;
+        height: auto;
+        padding: 35px 0;
+        display: block;
+        position: relative;
+        background-color: transparent;
+    }
+    div.firstWk div.imageWk{
+        width: 50%;
+        height: 350px;
+        border-radius: 5px;
+        display: block;
+        position: relative;
+        float: left;
+        background-color: transparent;
+        background-image: url("spleet.PNG");/* 
+        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); */
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    div.firstWk div.about{
+        width: 50%;
+        height: 250px;
+        display: block;
+        position: relative;
+        float: left;
+        padding: 40px 35px;
+    }
+    div.firstWk>div.about>p:nth-child(1) a{
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        padding: 0px 0 7.5px 0;
+        text-decoration: none;
+        color: #121212;
+        display: block;
+        position: relative;
+    }
+    div.firstWk>div.about>p:nth-child(2){
+        font-size: 16px;
+        font-family: "Roboto";
+        color: #121212;
+        line-height: 1.5;
+    }
 
-/* About Me */
-#about_me{
-    width: 100%;
-    height: 500px;
-    display: block;
-    position: relative;
-    padding: 50px 100px;
-}
-#about_me div{
-    display: block;
-    position: relative;
-    float: left;
-}
-#about_me div:nth-child(1){
-    background-color: rgba(0, 0, 0, 0.6);
-    width: calc(100% - 70%);
-    height: 100%;
-    background-image: url("me.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    float: left;
-}
-#about_me div:nth-child(2){
-    width: 60%;
-    height: 100%;
-    padding: 50px 50px 50px 40px;
-}
-#about_me div:nth-child(2) p{
-    font-size: 18px;
-    font-kerning: normal;
-    color: #121212;
-}
-#about_me div:nth-child(2) p:nth-child(1){
-    font-weight: 600;
-    font-family: "Lato";
-    padding: 0 0 10px 0;
-}
-#about_me div:nth-child(2) p:nth-child(n+2){
-    font-family: "Roboto";
-    padding: 12.5px 0 0 0;
-}
-
-/* Skills */
-#skills{
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    padding: 50px 100px;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-#skills>p{
-    font-family: "Lato";
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-    color: #ffffff;
-}
-#skills .tech{
-    width: calc(100%/3);
-    height: 200px;
-    display: block;
-    float: left;
-    position: relative;
-    margin: 0;
-    padding: 30px 40px;
-}
-#skills .tech .image{
-    width: 120px;
-    height: 120px;
-    display: block;
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin: 0 auto;
-    border-radius: 60px;
-    text-align: center;
-}
-#skills .tech .image.css::after {
-    content: "\f13c";
-    color: #4f87fb;
-    font-size: 26px;
-    display: block;
-    position: relative;
-    top: 40%;
-    transform: translateY(-40%);
-}
-#skills .tech .image.html::after {
-    content: "\f13b";
-    color: #4f87fb;
-    font-size: 26px;
-    display: block;
-    position: relative;
-    top: 40%;
-    transform: translateY(-40%);
-}
-#skills .tech .image.js {
-    background-image: url("javascript.png");
-    background-position: center;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    top: 40%;
-    transform: translateY(-40%);
-}
-#skills .tech .image.jquery {
-    background-image: url("jquery.png");
-    background-position: center;
-    background-size: 70% 40%;
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    top: 40%;
-    transform: translateY(-40%);
-}
-#skills .tech .image.git::after {
-    content: "\f1d3";
-    color: #4f87fb;
-    font-size: 26px;
-    display: block;
-    position: relative;
-    top: 40%;
-    transform: translateY(-40%);
-}
-#skills .tech p{
-    height: 40px;
-    width: 180px;
-    padding: 10px 30px;
-    display: block;
-    position: relative;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-family: "Roboto";
-    background-color: #ffffff;
-}
-
-/* My Works */
-#my_works{
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    padding: 50px 100px;
-    background-color: rgba(255, 255, 255, 0.6);
-}
-#my_works>p{
-    color: #112211;    
-    font-family: "Lato";
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-    text-transform: capitalize;
-}
-div.firstWk{
-    width: 100%;
-    height: auto;
-    padding: 35px 0;
-    display: block;
-    position: relative;
-}
-div.firstWk div.about{
-    width: 50%;
-    height: 250px;
-    display: block;
-    position: relative;
-    float: left;
-    padding: 35px 40px 35px 10px;
-}
-div.firstWk>div.about>p:nth-child(1) a{
-    font-size: 24px;
-    font-weight: normal;
-    font-style: normal;
-    padding: 15px 0;
-    text-decoration: none;
-    color: #121212;
-    display: block;
-    position: relative;
-}
-div.firstWk>div.about>p:nth-child(2){
-    font-size: 16px;
-    font-family: "Roboto";
-    color: #121212;
-    line-height: 1.5;
-}
-div.firstWk div.imageWk{
-    width: 50%;
-    height: 350px;
-    border-radius: 5px;
-    display: block;
-    position: relative;
-    float: left;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG");
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-div#contact_me{
-    width: 100%;
-    height: auto;
-    padding: 20px 100px;
-    position: relative;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.6)
-}
-div#contact_me>p{
-    color: #ffffff;    
-    font-family: "Lato";
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-    text-transform: capitalize;
-}
-div.links{
-    text-align: center; 
-    width: calc(100%/3);
-    height: 40px;
-    display: block;
-    position: relative;
-    float: left;
-    padding: 15px 0 0 0;
-}
-div.links a{
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    font-family: "Roboto";
+    div#contact_me{
+        width: 100%;
+        height: 100%;
+        padding: 15px 100px;
+        position: relative;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.6)
+    }
+    div#contact_me>p{
+        color: #ffffff;    
+        font-family: "Lato";
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    div.links{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        padding: 10px 0 0 0;
+    }
+    div.links ul{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        display: inline-block;
+        position: relative;
+    }
+    div.links ul li{
+        list-style: none;
+        display: block;
+        position: relative;
+        padding: 0 20px;
+        font-family: "Lato";
+        float: left;
+        width: auto;
+        height: auto;
+    }
+    div.links>ul>li>p{
+        font-size: 16px;
+        text-transform: none;
+        text-decoration: none;
+        padding: 0;
+    }
+    div.links>ul>li>a{
+        color: #ffffff;
+        text-decoration: none;
+    }
 }
