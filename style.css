@@ -1,6 +1,11 @@
 /* Importation of font files */
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@font-face{
+    font-family: "FontAwesome";
+    src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+}
+/*@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');*/
 html, body{
     padding: 0;
     margin: 0;
