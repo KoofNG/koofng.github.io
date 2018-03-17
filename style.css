@@ -216,6 +216,7 @@ html, body{
     }
     #skills .tech .image::after{
         content: "\f441";
+        font-family: "FontAwesome";
         color: rgba(0, 0, 0, 0.6);
         text-align: center;
         font-size: 35px;
