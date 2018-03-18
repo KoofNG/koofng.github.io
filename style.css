@@ -1,5 +1,10 @@
 /* Importation of font files */
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+@font-face{
+    font-family: "FontAwesome";
+    src: url("FontAwesome.otf") format("opentype");
+}
 html, body{
     padding: 0;
     margin: 0;
@@ -215,11 +220,12 @@ html, body{
     }
     #skills .tech .image::after{
         content: "\f121";
+        font-family: "FontAwesome";
         color: rgba(0, 0, 0, 0.6);
         text-align: center;
-        font-size: 35px;
-        top: 25%;
-        transform: translateY(-25%);
+        font-size: 40px;
+        top: 20%;
+        transform: translateY(-20%);
         display: block;
         position: relative;
     }
@@ -539,6 +545,7 @@ html, body{
     }
     #skills .tech .image::after{
         content: "\f121";
+        font-family: "FontAwesome";
         color: rgba(0, 0, 0, 0.6);
         text-align: center;
         font-size: 35px;
