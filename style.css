@@ -91,7 +91,7 @@ html, body{
         position: relative;
         background-attachment: fixed;
         background-image: url("_bg.jpeg");
-        /* background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true"); */
+        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true");
         background-size: cover;
         background-position: center;    
     }
@@ -278,8 +278,8 @@ html, body{
         position: relative;
         float: left;
         background-color: transparent;
-        background-image: url("spleet.PNG");/* 
-        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); */
+        background-image: url("spleet.PNG"); 
+        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); 
         background-position: center top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -420,8 +420,8 @@ html, body{
         display: block;
         position: relative;
         background-attachment: fixed;
-        background-image: url("_bg.jpeg");
-        /* background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true"); */
+        /* background-image: url("_bg.jpeg"); */
+        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/_bg.jpeg?raw=true"); 
         background-size: cover;
         background-position: center;    
     }
@@ -602,8 +602,8 @@ html, body{
         display: block;
         position: relative;
         background-color: transparent;
-        background-image: url("spleet.PNG");/* 
-        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); */
+        /* background-image: url("spleet.PNG"); */ 
+        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); 
         background-position: center top;
         background-size: cover;
         background-repeat: no-repeat;
