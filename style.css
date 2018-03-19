@@ -279,7 +279,7 @@ html, body{
         float: left;
         background-color: transparent;
         background-image: url("spleet.PNG"); 
-        background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); 
+        /*background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); */
         background-position: center top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -602,7 +602,7 @@ html, body{
         display: block;
         position: relative;
         background-color: transparent;
-        /* background-image: url("spleet.PNG"); */ 
+        background-image: url("spleet.PNG");
         background-image: url("https://github.com/aimCode/aimCode.github.io/blob/master/spleet.PNG"); 
         background-position: center top;
         background-size: cover;
